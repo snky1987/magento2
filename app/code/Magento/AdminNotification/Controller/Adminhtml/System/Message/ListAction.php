@@ -14,7 +14,7 @@ class ListAction extends \Magento\Backend\App\AbstractAction
     {
         $severity = $this->getRequest()->getParam('severity');
         $default = array(
-            'severity' => $severity,
+        'severity' => $severity,
             'text' => 'All recent issues have been fixed. Please refresh the screen for an update.',
         );
         $messageCollection = $this->_objectManager->get(
